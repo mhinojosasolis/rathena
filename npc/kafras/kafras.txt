@@ -258,6 +258,20 @@ prontera,151,29,0	script	Kafra Employee::kaf_prontera2	115,{
 	callfunc "F_KafEnd",0,1,"in the city of Prontera";
 }
 
+//mhinojosa
+prontera,150,190,5	script	Kafra Employee::kaf_prontera4	113,{
+	cutin "kafra_03",2;
+	callfunc "F_KafSet";
+	mes "[Kafra Employee]";
+	mes "Welcome~!";
+	mes "The Kafra Services";
+	mes "are always on your side.";
+	mes "So how can I help you?";
+	callfunc "F_Kafra",5,0,0,40,800;
+	savepoint "prontera",153,184,1,1;
+	callfunc "F_KafEnd",0,1,"in the city of Prontera";
+}
+
 prontera,29,207,6	script	Kafra Employee::kaf_prontera3	113,{
 	cutin "kafra_05",2;
 	callfunc "F_KafSet";
